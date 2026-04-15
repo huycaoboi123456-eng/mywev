@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Liên Hệ - LuxHome</title>
+  <link rel="stylesheet" href="global.css" />
+  <link rel="stylesheet" href="lien-he.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="container navbar-inner">
+      <a href="index.html" class="navbar-logo">
+        <div class="navbar-logo-icon">L</div>
+        <span class="navbar-logo-text">Lux<span>Home</span></span>
+      </a>
+      <ul class="navbar-nav">
+        <li><a href="index.html">Trang chủ</a></li>
+        <li><a href="san-pham.html">Sản phẩm</a></li>
+        <li><a href="du-an.html">Dự án</a></li>
+        <li><a href="gioi-thieu.html">Giới thiệu</a></li>
+        <li><a href="lien-he.html" class="active">Liên hệ</a></li>
+      </ul>
+      <div class="navbar-actions">
+        <a href="lien-he.html" class="btn btn-primary">Tư vấn miễn phí</a>
+        <button class="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="mobile-menu">
+    <a href="index.html">Trang chủ</a>
+    <a href="san-pham.html">Sản phẩm</a>
+    <a href="du-an.html">Dự án</a>
+    <a href="gioi-thieu.html">Giới thiệu</a>
+    <a href="lien-he.html">Liên hệ</a>
+  </div>
+
+  <!-- PAGE HEADER -->
+  <div class="page-header">
+    <div class="container">
+      <h1>Liên Hệ Với Chúng Tôi</h1>
+      <div class="breadcrumb">
+        <a href="index.html">Trang chủ</a>
+        <span>/</span>
+        <span>Liên hệ</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONTACT MAIN -->
+  <section class="contact-section">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- Contact Info -->
+        <div class="contact-info animate-in">
+          <span class="section-subtitle">Thông tin liên hệ</span>
+          <h2 class="section-title">Hãy nói chuyện<br />với chúng tôi</h2>
+          <p class="section-desc">Chúng tôi luôn sẵn sàng lắng nghe và tư vấn miễn phí cho dự án của bạn.</p>
+
+          <div class="contact-items">
+            <div class="contact-info-item">
+              <div class="ci-icon"><i class="fa fa-map-marker-alt"></i></div>
+              <div class="ci-text">
+                <strong>Địa chỉ Hà Nội</strong>
+                <span>Số 30, BT4-3 KĐT Vinaconex 3 – Trung Văn, Nam Từ Liêm, Hà Nội</span>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="ci-icon"><i class="fa fa-map-marker-alt"></i></div>
+              <div class="ci-text">
+                <strong>Địa chỉ TP.HCM</strong>
+                <span>SAV2 (Tháp 2) The Sun Avenue – 28 Mai Chí Thọ, Quận 2, TP.HCM</span>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="ci-icon"><i class="fa fa-phone"></i></div>
+              <div class="ci-text">
+                <strong>Hotline</strong>
+                <a href="tel:0966651888">0966 651 888</a>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="ci-icon"><i class="fa fa-envelope"></i></div>
+              <div class="ci-text">
+                <strong>Email</strong>
+                <a href="mailto:contact@luxhome.vn">contact@luxhome.vn</a>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="ci-icon"><i class="fa fa-clock"></i></div>
+              <div class="ci-text">
+                <strong>Giờ làm việc</strong>
+                <span>Thứ 2 – Thứ 7: 8:00 – 18:00</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-social">
+            <a href="#" class="social-btn"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-btn"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-btn"><i class="fab fa-youtube"></i></a>
+            <a href="#" class="social-btn"><i class="fab fa-pinterest"></i></a>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form-wrap animate-in">
+          <h3>Gửi yêu cầu tư vấn</h3>
+          <p>Điền thông tin bên dưới, chúng tôi sẽ liên hệ lại trong vòng 24 giờ.</p>
+
+          <form id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="hoTen">Họ và tên <span class="req">*</span></label>
+                <input type="text" id="hoTen" name="hoTen" placeholder="Nguyễn Văn A" />
+                <span class="field-error" id="hoTen-err"></span>
+              </div>
+              <div class="form-group">
+                <label for="soDienThoai">Số điện thoại <span class="req">*</span></label>
+                <input type="tel" id="soDienThoai" name="soDienThoai" placeholder="0966 651 888" />
+                <span class="field-error" id="soDienThoai-err"></span>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="example@email.com" />
+              <span class="field-error" id="email-err"></span>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="loaiCongTrinh">Loại công trình <span class="req">*</span></label>
+                <select id="loaiCongTrinh" name="loaiCongTrinh">
+                  <option value="">-- Chọn loại công trình --</option>
+                  <option value="biet-thu">Biệt thự / Villa</option>
+                  <option value="penthouse">Penthouse / Duplex</option>
+                  <option value="chung-cu">Căn hộ chung cư</option>
+                  <option value="nha-pho">Nhà phố</option>
+                  <option value="van-phong">Văn phòng</option>
+                  <option value="nha-hang">Nhà hàng / Café</option>
+                  <option value="khac">Công trình khác</option>
+                </select>
+                <span class="field-error" id="loaiCongTrinh-err"></span>
+              </div>
+              <div class="form-group">
+                <label for="dienTich">Diện tích (m²)</label>
+                <input type="number" id="dienTich" name="dienTich" placeholder="Ví dụ: 120" min="1" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="nganSach">Ngân sách dự kiến</label>
+              <select id="nganSach" name="nganSach">
+                <option value="">-- Chọn ngân sách --</option>
+                <option value="duoi-500">Dưới 500 triệu</option>
+                <option value="500-1ty">500 triệu – 1 tỷ</option>
+                <option value="1-2ty">1 – 2 tỷ</option>
+                <option value="tren-2ty">Trên 2 tỷ</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="ghiChu">Yêu cầu chi tiết</label>
+              <textarea id="ghiChu" name="ghiChu" rows="4" placeholder="Mô tả yêu cầu, phong cách mong muốn, số phòng..."></textarea>
+            </div>
+            <div class="form-checkbox">
+              <label class="checkbox-label">
+                <input type="checkbox" id="dongY" name="dongY" />
+                <span>Tôi đồng ý với <a href="#">Chính sách bảo mật</a> và cho phép LuxHome liên hệ tư vấn.</span>
+              </label>
+              <span class="field-error" id="dongY-err"></span>
+            </div>
+            <button type="submit" class="btn btn-primary submit-btn" id="submitBtn">
+              <span class="btn-text"><i class="fa fa-paper-plane"></i> Gửi yêu cầu</span>
+              <span class="btn-loading" style="display:none;"><i class="fa fa-spinner fa-spin"></i> Đang gửi...</span>
+            </button>
+          </form>
+
+          <!-- Success message -->
+          <div class="form-success" id="formSuccess" style="display:none;">
+            <i class="fa fa-check-circle fa-3x"></i>
+            <h3>Gửi thành công!</h3>
+            <p>Cảm ơn bạn đã liên hệ. Đội ngũ của chúng tôi sẽ gọi lại trong vòng <strong>2 giờ</strong> làm việc.</p>
+            <button class="btn btn-primary" onclick="resetForm()">Gửi yêu cầu khác</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAP PLACEHOLDER -->
+  <section class="map-section">
+    <div class="map-placeholder">
+      <div class="map-pin"><i class="fa fa-map-marker-alt"></i></div>
+      <p><strong>LuxHome Hà Nội</strong><br />Số 30, BT4-3 KĐT Vinaconex 3, Trung Văn, Nam Từ Liêm, Hà Nội</p>
+      <a href="https://maps.google.com" target="_blank" class="btn btn-primary">
+        <i class="fa fa-map"></i> Xem trên Google Maps
+      </a>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq-section section-pad">
+    <div class="container">
+      <div class="section-header animate-in" style="text-align:center; align-items:center; display:flex; flex-direction:column;">
+        <span class="section-subtitle">FAQ</span>
+        <h2 class="section-title">Câu hỏi thường gặp</h2>
+      </div>
+      <div class="faq-list" id="faqList">
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Chi phí thiết kế nội thất tính như thế nào?
+            <i class="fa fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Chi phí thiết kế nội thất tại LuxHome được tính theo diện tích hoặc gói dịch vụ tùy theo nhu cầu. Thông thường dao động từ 150.000 – 350.000 VNĐ/m² tùy phong cách và độ phức tạp. Chúng tôi tư vấn miễn phí lần đầu.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Thời gian thiết kế và thi công bao lâu?
+            <i class="fa fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Thời gian thiết kế concept thường từ 2-4 tuần. Thi công hoàn thiện tùy quy mô: căn hộ 60-90m² mất khoảng 45-60 ngày; biệt thự 400m²+ có thể 3-5 tháng. Chúng tôi luôn cam kết đúng tiến độ.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            LuxHome có bảo hành công trình không?
+            <i class="fa fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Có. Chúng tôi bảo hành thi công 24 tháng và bảo hành sản phẩm nội thất từ 12-36 tháng tùy loại. Sau bảo hành, đội ngũ kỹ thuật vẫn hỗ trợ bảo trì theo yêu cầu.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Có thể thay đổi thiết kế trong quá trình thi công không?
+            <i class="fa fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Có thể điều chỉnh một số hạng mục trong giai đoạn đầu thi công. Tuy nhiên, thay đổi lớn sau khi đã ký duyệt bản thiết kế có thể phát sinh thêm chi phí và ảnh hưởng tiến độ. Chúng tôi sẽ thông báo rõ ràng trước khi thực hiện.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            LuxHome có nhận dự án ngoài Hà Nội và TP.HCM không?
+            <i class="fa fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Có. LuxHome đã thực hiện dự án tại Đà Nẵng, Nha Trang, Quảng Ninh, Hải Phòng và nhiều tỉnh thành khác. Với dự án xa, chúng tôi bố trí đội giám sát riêng đảm bảo chất lượng.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <div class="footer-logo-icon">L</div>
+            <span class="footer-logo-text">LuxHome</span>
+          </div>
+          <p>Công ty thiết kế & thi công nội thất cao cấp.</p>
+          <div class="footer-social">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Dịch vụ</h4>
+          <ul>
+            <li><a href="san-pham.html">Thiết kế nội thất</a></li>
+            <li><a href="san-pham.html">Thi công nội thất</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Công ty</h4>
+          <ul>
+            <li><a href="gioi-thieu.html">Về chúng tôi</a></li>
+            <li><a href="du-an.html">Dự án</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Liên hệ</h4>
+          <div class="contact-item"><i class="fa fa-phone"></i><span>0966 651 888</span></div>
+          <div class="contact-item"><i class="fa fa-envelope"></i><span>contact@luxhome.vn</span></div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 LuxHome. All rights reserved.</span>
+      </div>
+    </div>
+  </footer>
+
+  <button id="scrollTop" aria-label="Scroll to top"><i class="fa fa-chevron-up"></i></button>
+
+  <script src="global.js"></script>
+  <script src="lien-he.js"></script>
+</body>
+</html>
